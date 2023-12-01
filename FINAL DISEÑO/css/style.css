@@ -1,0 +1,544 @@
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *::before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+    background: rgb(239, 243, 245);
+}
+
+img {
+    max-width: 100%;
+}
+.contenedor {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+h1 {
+    font-size: 3.8rem;
+    color: #fff;
+}
+h2 {
+    font-size: 3.4rem;
+    color: #1a1616;
+}
+h3 {
+    font-size: 3rem;
+    color: #1a1616;
+}
+h4 {
+    font-size: 2.6rem;
+    color: #1a1616;
+}
+
+
+p {
+    color: #16181a;
+}
+a {
+    text-decoration: none;
+}
+
+.seccion {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.fw-300 {
+    font-weight: 300;
+}
+.centrar-texto {
+    text-align: center;
+    color:   #000;
+}
+.d-block {
+    display: block!important;
+}
+.contenido-centrado {
+    max-width: 800px;
+}
+.boton {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    display: block;
+    flex: 0 0 100%;
+    
+}
+
+@media (min-width: 768px) {
+    .boton {
+        display: inline-block;
+        flex: 0 0 auto;
+    }
+}
+.boton:hover {
+    cursor: pointer;
+}
+.boton-amarillo {
+    background-color: #0093ad;
+    
+    
+}
+.boton-verde {
+    background-color: #0093ad;
+    
+    
+}
+.site-header {
+    background-color: #333;
+    padding: 1rem 0 3rem 0;
+}
+.site-header.inicio {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.3),rgba(0,0,0,0.3)
+    ), url(../img/4ceviches.jpg);
+    background-position: center center;
+    background-size: cover;
+    min-height: 60rem;
+}
+.contenido-header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    font-family: 'Noticia Text';
+}
+@media (min-width: 168px) {
+    .contenido-header {
+        text-align: left;
+    }
+}
+.contenido-header h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 76px;
+    line-height: 1.2;
+    font-weight: 700;
+    padding-top: 100px;
+}
+.barra {
+    padding-top: 1rem;
+}
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.navegacion a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2.2rem;
+    display: block;
+}
+@media (min-width: 768px) {
+    .navegacion a {
+        display: inline-block;
+        font-size: 1.8rem;
+        margin-right: 2rem;
+    }
+    .navegacion a:last-of-type {
+        margin: 0;
+    }
+}
+.navegacion a:hover {
+    color: #0093ad;
+}
+.mobile-menu img {
+    width: 5rem;
+}
+@media (min-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
+}
+.navegacion:target {
+    display: block;
+}
+.navegacion {
+    display: none;
+}
+@media (min-width: 768px) {
+    .navegacion {
+        display: block;
+    }
+}
+@media (min-width: 768px)  {
+    .iconos-nosotros {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.icono {
+    text-align: center;
+}
+@media (min-width: 768px){
+    .icono {
+        flex-basis: calc(33.3% - 1rem);
+    }
+}
+.icono h3 {
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    .contenedor-anuncios{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+.anuncio {
+    border: 1px solid var(--border-color-light);
+    background-color: #282828;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+    .anuncio {
+        flex: 0 0 calc(33.3% - 1rem);
+    }
+}
+.contenido-anuncio {
+    padding: 2rem;
+}
+.contenido-anuncio h3,
+.contenido-anuncio p {
+    margin: 0;
+}
+.precio {
+    color: #006dad;
+    font-weight: 700;
+}
+.iconos-caracteristicas {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+    max-width: 500px;
+}
+.iconos-caracteristicas li {
+    display: flex;
+
+}
+.iconos-caracteristicas li img {
+    margin-right: 2rem;
+}
+.ver-todas {
+    display: flex;
+    justify-content: flex-end;
+}
+.imagen-contacto {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.3),rgba(0,0,0,0.3)
+    ), url(../img/contactanos.avif);
+    background-position: center center;
+    background-size: cover;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+    opacity: 90%;
+
+}
+
+.cont-recom-black{
+    background-color: rgba(0, 0, 0, 0.80);
+}
+/*Contacto*/
+.contenido-contacto {
+    flex: 0 0 95%;
+    color: #fff;
+}
+.contenido-contacto p {
+    font-size: 1.8rem;
+}
+@media (min-width: 768px) {
+    .seccion-inferior {
+        display: flex;
+        justify-content: space-between;
+    }
+    .seccion-inferior .blog {
+        flex-basis: 60%;
+    }
+}
+.entrada-blog {
+    margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+    .entrada-blog {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.entrada-blog:last-of-type{
+    margin-bottom: 0;
+}
+@media (min-width: 768px) {
+    .entrada-blog .imagen {
+        flex-basis: 40%;
+    }
+    .entrada-blog .texto-entrada {
+        flex-basis: calc(60% - 3rem);
+    }
+}
+.texto-entrada a {
+    color: #000;
+    text-decoration: none;
+}
+.texto-entrada h4 {
+    margin: 0;
+    line-height: 1.4;
+}
+.texto-entrada h4::after {
+    content: '';
+    display: block;
+    width: 15rem;
+    height: .5rem;
+    background: #006dad;
+}
+.texto-entrada span {
+    color: #006dad;
+}
+.site-footer {
+    background: #333;
+    margin: 0;
+}
+.contenedor-footer {
+    padding: 3rem 0;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .contenedor-footer {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.site-footer nav {
+    display: none;
+}
+@media (min-width: 768px) {
+    .site-footer nav {
+        display: block;
+    }
+
+}
+copyright {
+    margin: 0;
+    color: #ffff;
+}
+
+
+/**Nosotros**/
+@media (min-width: 768px) {
+    .contenido-nosotros {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 2rem;
+    }
+}
+
+.texto-nosotros blockquote {
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 0;
+    padding: 1rem 0 3rem 0;
+    color: #16181a;
+}
+
+.imagen-leche_tigre {
+    position: fixed;
+    top: 94px;
+    left: 70%;
+    width: 200px;
+    height: 210px;
+    background-image: url('img/L_T.png');
+    background-size: cover; /* Escala la imagen para cubrir todo el cuerpo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: 0px 0px; /* Personaliza la posición de la imagen de fondo (ejemplo) */
+}
+
+/*Contacto*/
+.cont-contacto{
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.850);
+  
+}
+
+#buttonCont{
+    background-color: #1aa2f1;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 60%;
+    height: 100%;
+    color:white;
+    border: none;
+    
+}
+
+.cont-text{
+    background-color: white;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    width: 32%;
+    outline: none;
+    border: none;
+    position: relative;
+    left: 300px;
+    top:20px;
+   
+    
+}
+.cont-text2{
+    background-color: white;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    width: 32%;
+    outline: none;
+    border: none;
+    position: relative;
+    left: 900px;
+    top: -18px;
+   
+}
+#cont-mensaje{
+    background-color: white;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    width: 70%;
+    height: 100px;
+    outline: none;
+    border: none;
+    position: relative;
+    left: 300px;
+   
+
+    
+    
+}
+
+.col h6{
+    font-size: 25px;
+    text-align: left;
+    top: 50px;
+    
+}
+.col h7{
+    font-size: 60px !important;
+    
+}
+.cont-but{
+    height: 40px;
+    width: 116%;
+    position: relative;
+    left: 300px;
+    
+    
+
+}
+
+#p-contactos{
+    color:rgba(255, 255, 255, 0.842);
+    font-weight: lighter;
+    position: relative;
+    text-align: center;
+    left: 60px;
+    top: 45px;
+
+}
+
+#fondo{
+    background-image: url(./img/ceviche.jpeg);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.text-contacto1 {
+    margin-top: 20px;
+    color:rgba(236, 236, 236, 0.425);
+    font-size: 20px;
+    text-align: left;
+    position: relative;
+    left: 450px;
+    top: 45px;
+    
+}
+.text-contacto2 {
+    margin-top: 20px;
+    color:rgba(255, 255, 255, 0.842);
+    font-size: 20px;
+    text-align: left;
+    position: relative;
+    left: 900px;
+    top: -335px;
+}
+
+h5 {
+    font-weight: normal;
+    font-family: 'Noticia Text';
+    color:#fff;
+    font-size: 40px;
+    position: relative;
+    text-align: left;
+    left: 700px;
+    
+    
+}
+h6 {
+    font-weight: normal;
+    font-family: 'Great Vibes', sans-serif;
+    color:#0e1011;
+    position: relative;
+    text-align: left;
+    left: 450px;
+    
+    
+}
+
+h7 {
+    font-weight: normal;
+    font-family: 'Great Vibes', sans-serif;
+    color:#1aadf1;
+    position: relative;
+    text-align: center;
+    left: 650px;
+    top: 40px;
+    
+}
+h8 {
+    font-weight: normal;
+    font-family: 'Great Vibes', sans-serif;
+    color:#0e1011;
+    font-size: 25px;
+    position: relative;
+    text-align: center;
+    left: 900px;
+    top: -360px;
+    
+}
+
+h9 {
+    font-family: 'Noticia Text';
+    color:#fff;
+    font-size: 30px;
+    justify-content: center;
+    
+
+}
+
+
